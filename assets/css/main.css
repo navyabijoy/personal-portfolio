@@ -26,14 +26,15 @@
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
-  margin: .9rem 0 0 0;
+  margin: .6rem 0 0 0;
+  padding: 0.5rem;
   float: left;
 }
 
 .intro-info .lead {
   text-align: left;
   padding: 3rem 1rem 1rem 16rem;  /* top, right, bottom, left */
-  font-size: medium;
+  font-size: large;
 }
 
 /* Media query for screens smaller than 768px (e.g., tablets and smartphones) */
