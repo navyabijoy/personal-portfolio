@@ -17,31 +17,68 @@
   --nav-font: "Poppins",  sans-serif;
 }
 .intro-info {
-	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
+  margin-top: 4.2rem;
+  margin-right: -30px;
+  margin-left: -30px;
 }
+
 .intro-info img {
-	height: 15rem;
-	width: 15rem;
-	border-radius: 50%;
-	margin: .9rem 0 0 0;
-	float: left;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  margin: .9rem 0 0 0;
+  float: left;
 }
+
 .intro-info .lead {
-	text-align: left;
-	padding-left: 16rem;
-  padding-top: 3rem;
-  font-size:x-large;
+  text-align: left;
+  padding: 3rem 1rem 1rem 16rem;  /* top, right, bottom, left */
+  font-size: medium;
 }
-.skills .lead{
+
+/* Media query for screens smaller than 768px (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+  .intro-info {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .intro-info img {
+    height: 10rem;
+    width: 10rem;
+    margin: .5rem auto;
+    float: none;
+    display: block;
+  }
+
+  .intro-info .lead {
+    text-align: center;
+    padding: 1rem;  /* top, right, bottom, left */
+    font-size: small;
+  }
+}
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media (max-width: 576px) {
+  .intro-info img {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .intro-info .lead {
+    font-size: medium;
+    padding: 2rem;  /* top, right, bottom, left */
+  }
+}
+
+
+/* .skills .lead{
 
     /* text-align: left; */
     /* padding-left: 16rem; */
-    padding-top: 3rem;
-    font-size:large;
+  /* padding-top: 3rem; */
 
-}
+ 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #000000; /* Background color for the entire website, including individual sections */
@@ -1187,7 +1224,7 @@ section,
 }
 
 .contact .info-item p {
-  padding: 0;
+  padding-bottom: 1rem;
   margin-bottom: 0;
   font-size: 14px;
 }

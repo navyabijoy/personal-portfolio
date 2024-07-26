@@ -84,7 +84,6 @@
     <section id="about" class="about section">
 
       <!-- Section Title -->
-    <div class="'intro-info">
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <div class="intro-info">
@@ -459,7 +458,7 @@
       <div class="container section-title" data-aos="fade-up">
           <header class="section-header">
               <h2>Blog</h2>
-              <h5>To stay updated with the latest technologies in the ever-evolving tech world, I read research papers and occasionally write blogs about them on Medium!</h5>
+              <p class="lead">To stay updated with the latest technologies in the ever-evolving tech world, I read research papers and occasionally write blogs about them on Medium!</p>
             </header>
   
           <div class="row blog-container">
@@ -805,8 +804,10 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
+                  <input type="hidden" name="access_key" value="2d79a18f-6a30-4e9f-81f5-1a666258a988">
+
                     <div class="col-md-6">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                     </div>
@@ -819,11 +820,9 @@
                     <div class="col-md-12">
                         <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                     </div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <div class="col-md-12 text-center">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                        <button type="submit">Send Message</button>
+                      <button type="submit">Submit Form</button>
                     </div>
                 </div>
             </form>
